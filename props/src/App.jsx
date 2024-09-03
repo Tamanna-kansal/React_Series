@@ -2,7 +2,13 @@ import './App.css'
 import { First } from './components/first.jsx';
 import { Second } from './components/second.jsx';
 import { Message } from './components/Message.jsx';
+import Destructure from './components/destructure_props.jsx';
+import MethodProps from './components/methodProps.jsx';
 function App() {
+
+  function greet() {
+    alert("Welcome to the website");
+  }
   return (
     <>
       {/* <First name="App" heroName="Batsman" >
@@ -12,10 +18,11 @@ function App() {
       <First name="Clark" heroName="Wonder Woman" />
       <First name="Diana" heroName="Wonder Man" />
       <Second name="Rahul" heroName="Siddharth"></Second> */}
-      <Message />
-
+      {/* <Message />
+      <Destructure name="Rahul" heroName="Wonder Woman" /> */}
+      <MethodProps greetHandler={greet} />
     </>
   )
 }
 
-export default App
+export default App;
