@@ -5,6 +5,7 @@ import { Message } from './components/Message.jsx';
 import Destructure from './components/destructure_props.jsx';
 import MethodProps from './components/methodProps.jsx';
 import Conditional from './components/conditionalrender.jsx';
+import Mapp from './components/map_function.jsx';
 function App() {
 
   function greet() {
@@ -22,7 +23,8 @@ function App() {
       {/* <Message />
       <Destructure name="Rahul" heroName="Wonder Woman" /> */}
       {/* <MethodProps greetHandler={greet} /> */}
-      <Conditional />
+      {/* <Conditional /> */}
+      <Mapp />
     </>
   )
 }
