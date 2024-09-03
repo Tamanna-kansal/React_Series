@@ -4,6 +4,7 @@ import { Second } from './components/second.jsx';
 import { Message } from './components/Message.jsx';
 import Destructure from './components/destructure_props.jsx';
 import MethodProps from './components/methodProps.jsx';
+import Conditional from './components/conditionalrender.jsx';
 function App() {
 
   function greet() {
@@ -20,7 +21,8 @@ function App() {
       <Second name="Rahul" heroName="Siddharth"></Second> */}
       {/* <Message />
       <Destructure name="Rahul" heroName="Wonder Woman" /> */}
-      <MethodProps greetHandler={greet} />
+      {/* <MethodProps greetHandler={greet} /> */}
+      <Conditional />
     </>
   )
 }
